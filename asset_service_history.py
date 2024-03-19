@@ -27,7 +27,7 @@ df_cases = df_cases.rename(columns={'type':'case_type',
                                     'description':'case_description',
                                     'case_owner_full_name':'case_owner',
                                     'owner_full_name':'wo_owner'})
-df_casesb = df_cases.astype({'case_number':str, 
+df_cases = df_cases.astype({'case_number':str, 
                             'wo_number':str})
 df_cases[['incident_date']] = df_cases[['incident_date']].apply(pd.to_datetime, format = '%m/%d/%Y', errors = 'coerce')
 df_cases.drop_duplicates(inplace=True) #will remove duplicate rows only if exactly the same.  same case, diff WO# remain
