@@ -16,4 +16,4 @@ Reports should be loaded into the same folder with the following names (.csv fil
 * timesheets.csv
 * part_pricing.csv
 
-The script will produce the tidy output dataframe of 'df.csv' which can then be further analyzed in user's software of choice
+Ensure that variables headers in the reports are the same as the script.  The script will produce the tidy output dataframe of 'df.csv' which can then be further analyzed in user's software of choice
